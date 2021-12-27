@@ -100,41 +100,34 @@
             <p>PHP merupakan bahasa pemrograman server-side, maka script dari PHP nantinya akan diproses di server. Jenis server yang sering digunakan bersama dengan PHP antara lain Apache, Nginx, dan LiteSpeed.
             Selain itu, PHP juga merupakan bahasa pemrograman yang bersifat open source. Pengguna bebas memodifikasi dan mengembangkan sesuai dengan kebutuhan mereka.</p>
     <br>
-       <li><strong>Use Case Diagram</strong></li>
-        <p>Use case diagram adalah satu dari berbagai jenis diagram UML (Unified Modelling Language) yang menggambarkan hubungan interaksi antara sistem dan aktor. Use Case dapat mendeskripsikan tipe interaksi antara si pengguna sistem dengan sistemnya.
-            </p>
-        <p>Tentunya, use case diagram merupakan sesuatu yang mudah dipelajari. Langkah awal untuk melakukan pemodelan, tentu perlunya suatu diagram yang mampu menjabarkan aksi aktor dengan aksi sistem itu sendiri, seperti yang terdapat pada use case diagram.</p>
-        <p>Adapun, fungsi dari use case diagram sebagai berikut:</p>
-       <ul>
-           <li>Berguna memperlihatkan proses aktivitas secara urut dalam sistem.</li>
-           <li>Mampu menggambarkan proses bisnis, bahkan menampilkan urutan aktivitas pada sebuah proses.</li>
-           <li>Sebagai bridge atau jembatan antara pembuat dengan konsumen untuk mendeskripsikan sebuah sistem.</li>
-
-       </ul>
-        <p>Komponen Use Case Diagram</p>
-        <img src="sources/useCase.png">
-            <p>Gambar 1. Komponen Use Case</p>
-        <br>
-        <li><strong>Activity Diagram</strong></li>
-        <p>Activity Diagram merupakan rancangan aliran aktivitas atau aliran kerja dalam sebuah sistem yang akan dijalankan. Activity Diagram juga digunakan untuk mendefinisikan atau mengelompokan aluran tampilan dari sistem tersebut. Activity Diagram memiliki komponen dengan bentuk tertentu yang dihubungkan dengan tanda panah. Panah tersebut mengarah ke-urutan aktivitas yang terjadi dari awal hingga akhir.</p>
-        <p>Tujuan Activity Diagram :</p>
-        <ul>
-            <li>Menjelaskan urutan aktivitas dalam suatu proses.</li>
-            <li>Di dalam dunia bisnis biasanya digunakan untuk modeling (memperlihatkan urutan proses bisnis).</li>
-            <li>Mudah dalam memahami proses yang ada dalam sistem secara keseluruhan.</li>
-            <li>Merupakan metode perancangan yang terstruktur, mirip dengan Flowchart maupun Data Flow Diagram (DFD).</li>
-            <li>Mengetahui aktivitas aktor/pengguna berdasarkan use case/diagram yang dibuat sebelumnya. </li>
-        </ul>
-        <br>
-        <p>Komponen Activity Diagram</p>
-        <img src="sources/activityDiagram.png" alt="">
-        <p>Gambar 2. Komponen Activity Diagram</p><br>
-        <li><strong>Relasi Tabel Database</strong></li>
-        <p>Relasi Tabel adalah hubungan antara tabel yang mempresentasikan hubungan antar objek di dunia nyata. Relasi merupakan hubungan yang terjadi pada suatu tabel dengan lainnya yang mempresentasikan hubungan antar objek di dunia nyata dan berfungsi untuk mengatur mengatur operasi suatu database.</p>
-        <img src="sources/relasi_tabel1.png" alt="">
-
+        <li><strong>DFD (Data Flow Diagram)</strong></li>
+        <p>
+            DFD adalah suatu diagram yang menggambarkan aliran data dari sebuah proses yang sering disebut dengan sistem informasi. Di dalam data flow diagram juga menyediakan informasi mengenai input dan output dari tiap entitas dan proses itu sendiri.
+            Dalam diagram alir data juga tidak mempunyai kontrol terhadap flow -nya, sehingga tidak adanya aturan terkait keputusan atau pengulangan. Bentuk penggambaran berupa data flowchart dengan skema yang lebih spesifik. 
+            Menurut Kenneth Kozar, tujuan dari adanya DFD sendiri adalah sebagai penyedia atau menjembatani antara pengguna dengan sistem.
+        </p>
+        <ol>
+            <li type="a">Komponen DFD (Data Flow Diagram)</li><br>
+            <img src="Design/Komponen DFD.jpg" style="height: 350px;">
+            <p>Gambar 1. Komponen DFD</p>
+        </ol><br>
+        <li><Strong>Jenis-Jenis DFD</Strong></li>
+        <p>Data flow diagram terbagi menjadi tiga jenis, dimana setiap bagian memiliki peran dan fungsinya masing-masing.</p>
+        <ol type="a"><br>
+            <li>Diagram Level 0 (Diagram Konteks)</li>
+            <p>Diagram konteks atau level 0 merupakan diagram dengan tingkatan paling rendah, dimana menggambarkan sistem berinteraksi dengan entitas eksternal. 
+                Pada diagram konteks akan diberi nomor untuk setiap proses yang berjalan, dimulai dari angka 0 terlebih dahulu.</p>
+            <br><li>Diagram Level 1</li>
+            <p>DFD level 1 merupakan lanjutan dari diagram konteks, dimana setiap proses yang berjalan akan diperinci pada tingkatan ini. 
+                Sehingga, proses utama akan dipecah menjadi sub – sub proses yang lebih kecil lagi.</p>
+            <br><li>Diagram Level 2</li>
+            <p>DFD level 2 merupakan tingkat lanjutan dari level yang sebelumnya, dimana pada fase ini akan dijelaskan lebih detail terkait tiap prosesnya. 
+                Namun, untuk tingkatan ini jarang sekali dikerjakan dan lebih banyak hanya menerapkan dua level di bawahnya saja.</p>
+        </ol><br>
+            <li><strong>ERD (Entity Relationship Diagram)</strong></li>
+            <p>ERD merupakan salah satu jenis diagram yang sifatnya lebih struktural dan bisa digunakan untuk dimanfaatkan dalam suatu desain pada suatu database ataupun pada sebuah business plan</p>
+            <br>
         <!-- ##################### Penerapan metode Agile ############################# -->
-        <p>Gambar 3. Relasi Tabel</p><br>
         <li><strong>Tujuan Penerapan Model Agile</strong></li><br>
         <p>Tujuan penerapan metode Agile dalam pengembangan Agile</p>
         <ul>
