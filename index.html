@@ -176,21 +176,10 @@
     <ol>
         <li><strong>Requirements Planning (Perencanaan)</strong></li><br>
         <p>Penerapan metode agile dalam membuat aplikasi ini diawali dengan tahap perencanaan syarat dan kebutuhan website. Acuan dalam pembuatan aplikasi ini yaitu dengan menganalisa kebutuhan user, 
-            dimana user aplikasi ini terdiri dari admin, operator, dan anggota. Orientasi dalam fase ini adalah pemecahan masalah-masalah, berikut ini adalah hasil analisa mengenai syarat-syarat sistem, kebutuhan, data, software dan lainnya.</p>
+            dimana user aplikasi ini terdiri dari petugas dan anggota. Orientasi dalam fase ini adalah pemecahan masalah-masalah, berikut ini adalah hasil analisa mengenai syarat-syarat sistem, kebutuhan, data, software dan lainnya.</p>
         <ol>
             <li>Kebutuhan Fungsional</li>
-            <li>Admin</li>
-            <ol type="a">
-              <li>Admin dapat login dan logout</li>
-              <li>Admin dapat melihat data buku</li>
-              <li>Admin dapat melihat data anggota</li>
-              <li>Admin dapat melihat data transaksi</li>
-              <li>Admin dapat melihat laporan</li>
-              <li>Admin dapat mengelola data operator</li>
-              <li>Admin dapat mengelola data pribadi</li>
-              <li>Admin dapat menambahkan operator</li>
-            </ol>
-            <li>Operator</li>
+            <li>Petugas</li>
             <ol type="a">
               <li>Operator dapat login dan logout</li>
               <li>Operator dapat mengelola dan melihat data buku</li>
@@ -285,27 +274,14 @@
                 <li>Admin<br>Yaitu bagian yang hanya bisa melihat data buku dan anggota serta mengelola data operator.</li>
             </ol>
             
-            <li>Activity Diagram</li>
-                <p>Activity Diagram merupakan rancangan aliran aktivitas atau aliran kerja dalam sebuah sistem yang akan dijalankan. 
-                    Activity Diagram juga digunakan untuk mendefinisikan atau mengelompokan aluran tampilan dari sistem tersebut.
-                    Dalam beberapa hal activity diagram memainkan peran mirip diagram alir, tetapi perbedaan
-                    prinsip antara notasi diagram alir adalah activity diagram mendukung <i>behavior paralel.</i> Activity Diagram yang 
-                    ada pada sistem informasi Perpustakaan Kelompok 1 adalah sebagai berikut:</p><br>
+            <li>Entity Relationship Diagram</li>
+                <p>ERD adalah model atau rancangan untuk membuat database, 
+                    supaya lebih mudah dalam menggambarkan data yang memiliki hubungan atau relasi dalam bentuk sebuah desain. 
+                    Dengan adanya ER diagram, maka sistem database yang terbentuk dapat digambarkan dengan lebih terstruktur dan terlihat rapi.</p><br>
                 <ol type="a">
-                    <li>Admin</li><br>
-                    <img src="sources/Activity Diagram-Admin.png" style="width: 410px; height: 480px;">
-                    <p>Gambar 6. Activity Diagram Admin - mengelola data pelamar</p><br>
-                    <p>Activity diagram yang ditampilkan pada gambar di atas adalah proses pendaftaran seorang operator yang dilakukan oleh admin.</p><br>
-                    <li>Operator</li><br>
-                    <img src="sources/Activity Diagram-Operator.png" style="width: 410px; height: 480px;">
-                    <p>Gambar 7. Activity Diagram Operator</p>
-                    <br><img src="sources/Activity Diagram-Operator (Pengembalian).png" style="width: 410px; height: 480px;">
-                    <p>Gambar 8. Activity Diagram Operator - Pengembalian</p><br>
-                    <li>Anggota</li><br>
-                    <img src="sources/Activity Diagram-Anggota.png" style="width: 410px; height: 480px;">
-                    <p>Gambar 9. Activity Diagram Anggota - Pendaftaran</p> 
-                    <br><img src="sources/Activity Diagram-Anggota (Peminjaman).png" style="width: 410px; height: 480px;">
-                    <p>Gambar 10. Activity Diagram Anggota - Peminjaman</p><br>
+                    <li>ERD Aplikasi Perpustakaan</li><br>
+                    <img src="Diagram/erd(1).png" style="width: 410px; height: 480px;">
+                    <p>Gambar 6. Entity Relationship Diagram</p><br>
                 </ol>
                 <li>Struktur Tabel</li>
                 <p>Dalam pengembangan sistem ini memerlukan beberapa tabel yang
