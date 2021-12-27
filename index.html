@@ -63,7 +63,7 @@
         Selain unit usaha terdapat juga unit perpustakaan yang memiliki peran sebagai salah satu tempat untuk mencari informasi. 
         Unit perpustakaan pada dasarnya membutuhkan pengelolaan terhadap aset-aset yang dimilikinya seperti pendataan aset, 
         proses transaksi pinjam-meninjam.</p>
-    <p>Oleh karena itu, dibuatlah sebuah aplikasi Sistem Informasi Manajemen Perpustakaan berbasis web supaya memudahkan sekolah x 
+    <p>Oleh karena itu, dibuatlah sebuah aplikasi Sistem Informasi Manajemen Perpustakaan berbasis web supaya memudahkan SMA 1 Yogyakarta 
         untuk mengelola pendataan dan transaksi yang terjadi di perpustakaan sekolah tersebut. Sistem ini dikembangkan dengan 
         menggunakan Bahasa pemrograman PHP dengan aturan sebuah web supaya lebih tersruktur menggunakan HTML, CSS.</p>
     <h4>1.2 Rumusan Masalah</h4>
@@ -83,9 +83,9 @@
     <h4>1.4 Tujuan</h4>
         <p>Adapun tujuan yang didapat :</p>
     <ol>
-        <li>Merancang sistem manajemen yang lebih efisien dalam pendataan</li>
-        <li>Merancang aplikasi perpustakaan berbasis web untuk sekolah x</li>
-        <li>Merancang sistem aplikasi manajemen perpustakaan yang ramah pengguna, baik dari segi antarmuka ataupun fitur-fitur yang disediakan untuk memudahkan pustakawan dalam mengelola perpustakaan.</li>
+        <li>implementasi pembuatan perpustakaan digital untuk SMA 1 Yogyakarta</li>
+        <li>Menambah pengetahuan tentang teknologi informasi khususnya penyebaran informasi melalui perpustakaan digital.</li>
+        <li>Membantu Pengguna agar mengetahui koleksi apa saja yang ada dalam perpustakaan</li>
     </ol>
     <br>
     <br>
@@ -226,7 +226,7 @@
             </ol>
         </ol>
         <br>
-        <li><strong>Tahap Pengujian</strong></li> 
+        <li><strong>Review</strong></li> 
         <p>implementasi tahap pengujian akan mengulas mengenai fitur, fungsi, visual, dan interface yang di uji coba oleh klien. Pada tahap ini, perubahan akan dilakukan jika memang diperlukan. Uji coba mencakup kestabilan, usability testing, dan pengujian lainnya untuk memastikan semua hal terkontrol dengan baik</p>
         <table border="1" style="font-size: 14px;" >
             <tr>
@@ -320,7 +320,7 @@
                         </tr>
                         <tr>
                             <td>Field kunci utama</td>
-                            <td>: no_induk</td>
+                            <td>: no_anggota</td>
                         </tr>
                         <tr>
                             <td>Field kunci tamu</td>
@@ -332,68 +332,8 @@
                         </tr>
                     </table><br>
                     <p>Tabel 1.1 Struktur Tabel User</p>
-                    <div class="tab_struktur">
-                        <table>
-                            <tr>
-                                <th>No.</th>
-                                <th>Nama Field</th>
-                                <th>Type</th>
-                                <th>Width</th>
-                                <th>Keterangan</th>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>no_induk*</td>
-                                <td>int</td>
-                                <td>10</td>
-                                <td>No. induk user</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>nama_lengkap</td>
-                                <td>varchar</td>
-                                <td>200</td>
-                                <td>Nama lengkap user</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>username</td>
-                                <td>varchar</td>
-                                <td>100</td>
-                                <td>username</td>
-                            </tr>
-                            <tr>
-                                <td>4</td>
-                                <td>no_hp</td>
-                                <td>varchar</td>
-                                <td>20</td>
-                                <td>No. HP user</td>
-                            </tr>
-                            <tr>
-                                <td>5</td>
-                                <td>password</td>
-                                <td>varchar</td>
-                                <td>100</td>
-                                <td>password user</td>
-                            </tr>
-                            <tr>
-                                <td>6</td>
-                                <td>ulang_password</td>
-                                <td>varchar</td>
-                                <td>100</td>
-                                <td>konfirmasi password</td>
-                            </tr>
-                            <tr>
-                                <td>7</td>
-                                <td>level</td>
-                                <td>varchar</td>
-                                <td>100</td>
-                                <td>level akses</td>
-                            </tr>
-                        </table>
-                    </div><br>
-                    
-                   
+                   <img src="sources/tab_anggota.png" alt="">
+                    <br>
                     <li>Tabel Buku</li>
                     <table>
                         <tr>
@@ -414,54 +354,8 @@
                         </tr>
                     </table><br>
                     <p>Tabel 1.2 Struktur Tabel Buku</p>
-                    <div class="tab_struktur">
-                        <table>
-                            <tr>
-                                <th>No.</th>
-                                <th>Nama Field</th>
-                                <th>Type</th>
-                                <th>Width</th>
-                                <th>Keterangan</th>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>kode_buku*</td>
-                                <td>int</td>
-                                <td>10</td>
-                                <td>Kode buku</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>judul_buku</td>
-                                <td>varchar</td>
-                                <td>200</td>
-                                <td>Judul buku</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>penulis_buku</td>
-                                <td>varchar</td>
-                                <td>200</td>
-                                <td>Nama penulis buku</td>
-                            </tr>
-                            <tr>
-                                <td>4</td>
-                                <td>penerbit_buku</td>
-                                <td>varchar</td>
-                                <td>100</td>
-                                <td>Nama penerbit buku</td>
-                            </tr>
-                            <tr>
-                                <td>5</td>
-                                <td>tahun_terbit</td>
-                                <td>varchar</td>
-                                <td>4</td>
-                                <td>Tahun terbit buku</td>
-                            </tr>
-                        </table>
-                    </div><br>
-                    
-                    
+                    <img src="sources/tab_buku.png" alt="">
+                   <br>  
                     <li>Tabel Transaksi</li>
                     <table>
                         <tr>
@@ -482,94 +376,16 @@
                         </tr>
                     </table><br>
                     <p>Tabel 1.3 Struktur Tabel Transaksi</p>
-                    <div class="tab_struktur">
-                        <table>
-                            <tr>
-                                <th>No.</th>
-                                <th>Nama Field</th>
-                                <th>Type</th>
-                                <th>Width</th>
-                                <th>Keterangan</th>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>id_transaksi*</td>
-                                <td>int</td>
-                                <td>11</td>
-                                <td>ID transaksi</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>kode_buku**</td>
-                                <td>varchar</td>
-                                <td>10</td>
-                                <td>Kode buku</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>no_induk**</td>
-                                <td>varchar</td>
-                                <td>10</td>
-                                <td>No. induk user</td>
-                            </tr>
-                            <tr>
-                                <td>4</td>
-                                <td>nama_lengkap</td>
-                                <td>varchar</td>
-                                <td>200</td>
-                                <td>Nama lengkap user</td>
-                            </tr>
-                            <tr>
-                                <td>5</td>
-                                <td>tgl_pinjam</td>
-                                <td>varchar</td>
-                                <td>50</td>
-                                <td>Tanggal peminjaman</td>
-                            </tr>
-                            <tr>
-                                <td>6</td>
-                                <td>tgl_kembali</td>
-                                <td>varchar</td>
-                                <td>50</td>
-                                <td>Tanggal pengembalian</td>
-                            </tr>
-                            <tr>
-                                <td>7</td>
-                                <td>status</td>
-                                <td>varchar</td>
-                                <td>50</td>
-                                <td>status peminjaman</td>
-                            </tr>
-                        </table></div>
-                        <li>Tabel Admin</li>
-                         <table>
-                        <tr>
-                            <td>Fungsi tabel admin</td>
-                            <td>: untuk menyimpan data admin</td>
-                        </tr>
-                        <tr>
-                            <td>Field kunci utama</td>
-                            <td>: id_admin</td>
-                        </tr>
-                        <tr>
-                            <td>Field kunci tamu</td>
-                            <td>: - </td>
-                        </tr>
-                        <tr>
-                            <td>Jumlah Field</td>
-                            <td>: 8</td>
-                        </tr>
-                    </table>
-                    <img src="sources/tabel_admin.jpg" alt="">
+                   <img src="sources/tab_transaksi.png" alt="">
                     <li>Tabel Operator</li>
                          <table border="0">
                         <tr>
                             <td>Fungsi tabel operator</td>
-                            <td>: untuk menyimpan data operator</td>
+                            <td>: untuk menyimpan data petugas</td>
                         </tr>
                         <tr>
                             <td>Field kunci utama</td>
-                            <td>: id_operator</td>
+                            <td>: no_petugas</td>
                         </tr>
                         <tr>
                             <td>Field kunci tamu</td>
@@ -580,7 +396,7 @@
                             <td>: 8</td>
                         </tr>
                     </table>
-                    <img src="sources/tabel_operator.jpg" alt="">
+                    <img src="sources/tab_petugas.png" alt="">
                         
                     <br>
                 </ol>
