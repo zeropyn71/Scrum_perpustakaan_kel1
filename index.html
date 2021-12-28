@@ -100,41 +100,34 @@
             <p>PHP merupakan bahasa pemrograman server-side, maka script dari PHP nantinya akan diproses di server. Jenis server yang sering digunakan bersama dengan PHP antara lain Apache, Nginx, dan LiteSpeed.
             Selain itu, PHP juga merupakan bahasa pemrograman yang bersifat open source. Pengguna bebas memodifikasi dan mengembangkan sesuai dengan kebutuhan mereka.</p>
     <br>
-       <li><strong>Use Case Diagram</strong></li>
-        <p>Use case diagram adalah satu dari berbagai jenis diagram UML (Unified Modelling Language) yang menggambarkan hubungan interaksi antara sistem dan aktor. Use Case dapat mendeskripsikan tipe interaksi antara si pengguna sistem dengan sistemnya.
-            </p>
-        <p>Tentunya, use case diagram merupakan sesuatu yang mudah dipelajari. Langkah awal untuk melakukan pemodelan, tentu perlunya suatu diagram yang mampu menjabarkan aksi aktor dengan aksi sistem itu sendiri, seperti yang terdapat pada use case diagram.</p>
-        <p>Adapun, fungsi dari use case diagram sebagai berikut:</p>
-       <ul>
-           <li>Berguna memperlihatkan proses aktivitas secara urut dalam sistem.</li>
-           <li>Mampu menggambarkan proses bisnis, bahkan menampilkan urutan aktivitas pada sebuah proses.</li>
-           <li>Sebagai bridge atau jembatan antara pembuat dengan konsumen untuk mendeskripsikan sebuah sistem.</li>
-
-       </ul>
-        <p>Komponen Use Case Diagram</p>
-        <img src="sources/useCase.png">
-            <p>Gambar 1. Komponen Use Case</p>
-        <br>
-        <li><strong>Activity Diagram</strong></li>
-        <p>Activity Diagram merupakan rancangan aliran aktivitas atau aliran kerja dalam sebuah sistem yang akan dijalankan. Activity Diagram juga digunakan untuk mendefinisikan atau mengelompokan aluran tampilan dari sistem tersebut. Activity Diagram memiliki komponen dengan bentuk tertentu yang dihubungkan dengan tanda panah. Panah tersebut mengarah ke-urutan aktivitas yang terjadi dari awal hingga akhir.</p>
-        <p>Tujuan Activity Diagram :</p>
-        <ul>
-            <li>Menjelaskan urutan aktivitas dalam suatu proses.</li>
-            <li>Di dalam dunia bisnis biasanya digunakan untuk modeling (memperlihatkan urutan proses bisnis).</li>
-            <li>Mudah dalam memahami proses yang ada dalam sistem secara keseluruhan.</li>
-            <li>Merupakan metode perancangan yang terstruktur, mirip dengan Flowchart maupun Data Flow Diagram (DFD).</li>
-            <li>Mengetahui aktivitas aktor/pengguna berdasarkan use case/diagram yang dibuat sebelumnya. </li>
-        </ul>
-        <br>
-        <p>Komponen Activity Diagram</p>
-        <img src="sources/activityDiagram.png" alt="">
-        <p>Gambar 2. Komponen Activity Diagram</p><br>
-        <li><strong>Relasi Tabel Database</strong></li>
-        <p>Relasi Tabel adalah hubungan antara tabel yang mempresentasikan hubungan antar objek di dunia nyata. Relasi merupakan hubungan yang terjadi pada suatu tabel dengan lainnya yang mempresentasikan hubungan antar objek di dunia nyata dan berfungsi untuk mengatur mengatur operasi suatu database.</p>
-        <img src="sources/relasi_tabel1.png" alt="">
-
+        <li><strong>DFD (Data Flow Diagram)</strong></li>
+        <p>
+            DFD adalah suatu diagram yang menggambarkan aliran data dari sebuah proses yang sering disebut dengan sistem informasi. Di dalam data flow diagram juga menyediakan informasi mengenai input dan output dari tiap entitas dan proses itu sendiri.
+            Dalam diagram alir data juga tidak mempunyai kontrol terhadap flow -nya, sehingga tidak adanya aturan terkait keputusan atau pengulangan. Bentuk penggambaran berupa data flowchart dengan skema yang lebih spesifik. 
+            Menurut Kenneth Kozar, tujuan dari adanya DFD sendiri adalah sebagai penyedia atau menjembatani antara pengguna dengan sistem.
+        </p>
+        <ol>
+            <li type="a">Komponen DFD (Data Flow Diagram)</li><br>
+            <img src="Design/Komponen DFD.jpg" style="height: 350px;">
+            <p>Gambar 1. Komponen DFD</p>
+        </ol><br>
+        <li><Strong>Jenis-Jenis DFD</Strong></li>
+        <p>Data flow diagram terbagi menjadi tiga jenis, dimana setiap bagian memiliki peran dan fungsinya masing-masing.</p>
+        <ol type="a"><br>
+            <li>Diagram Level 0 (Diagram Konteks)</li>
+            <p>Diagram konteks atau level 0 merupakan diagram dengan tingkatan paling rendah, dimana menggambarkan sistem berinteraksi dengan entitas eksternal. 
+                Pada diagram konteks akan diberi nomor untuk setiap proses yang berjalan, dimulai dari angka 0 terlebih dahulu.</p>
+            <br><li>Diagram Level 1</li>
+            <p>DFD level 1 merupakan lanjutan dari diagram konteks, dimana setiap proses yang berjalan akan diperinci pada tingkatan ini. 
+                Sehingga, proses utama akan dipecah menjadi sub – sub proses yang lebih kecil lagi.</p>
+            <br><li>Diagram Level 2</li>
+            <p>DFD level 2 merupakan tingkat lanjutan dari level yang sebelumnya, dimana pada fase ini akan dijelaskan lebih detail terkait tiap prosesnya. 
+                Namun, untuk tingkatan ini jarang sekali dikerjakan dan lebih banyak hanya menerapkan dua level di bawahnya saja.</p>
+        </ol><br>
+            <li><strong>ERD (Entity Relationship Diagram)</strong></li>
+            <p>ERD merupakan salah satu jenis diagram yang sifatnya lebih struktural dan bisa digunakan untuk dimanfaatkan dalam suatu desain pada suatu database ataupun pada sebuah business plan</p>
+            <br>
         <!-- ##################### Penerapan metode Agile ############################# -->
-        <p>Gambar 3. Relasi Tabel</p><br>
         <li><strong>Tujuan Penerapan Model Agile</strong></li><br>
         <p>Tujuan penerapan metode Agile dalam pengembangan Agile</p>
         <ul>
@@ -183,36 +176,23 @@
     <ol>
         <li><strong>Requirements Planning (Perencanaan)</strong></li><br>
         <p>Penerapan metode agile dalam membuat aplikasi ini diawali dengan tahap perencanaan syarat dan kebutuhan website. Acuan dalam pembuatan aplikasi ini yaitu dengan menganalisa kebutuhan user, 
-            dimana user aplikasi ini terdiri dari admin, operator, dan anggota. Orientasi dalam fase ini adalah pemecahan masalah-masalah, berikut ini adalah hasil analisa mengenai syarat-syarat sistem, kebutuhan, data, software dan lainnya.</p>
+            dimana user aplikasi ini terdiri dari petugas dan anggota. Orientasi dalam fase ini adalah pemecahan masalah-masalah, berikut ini adalah hasil analisa mengenai syarat-syarat sistem, kebutuhan, data, software dan lainnya.</p>
         <ol>
             <li>Kebutuhan Fungsional</li>
-            <li>Admin</li>
+            <li>Petugas</li>
             <ol type="a">
-              <li>Admin dapat login dan logout</li>
-              <li>Admin dapat melihat data buku</li>
-              <li>Admin dapat melihat data anggota</li>
-              <li>Admin dapat melihat data transaksi</li>
-              <li>Admin dapat melihat laporan</li>
-              <li>Admin dapat mengelola data operator</li>
-              <li>Admin dapat mengelola data pribadi</li>
-              <li>Admin dapat menambahkan operator</li>
-            </ol>
-            <li>Operator</li>
-            <ol type="a">
-              <li>Operator dapat login dan logout</li>
-              <li>Operator dapat mengelola dan melihat data buku</li>
-              <li>Operator dapat mengelola data anggota</li>
-              <li>Operator dapat mengelola data transaksi</li>
-              <li>Operator dapat mengelola laporan</li>
-              <li>Operator dapat mengelola data pribadi</li>
-              <li>Operator dapat menambahkan anggota</li>
+              <li>Petugas dapat login dan logout</li>
+              <li>Petugas dapat mengelola data buku</li>
+              <li>Petugas dapat mengelola data anggota</li>
+              <li>Petugas dapat mengelola data transaksi</li>
+              <li>Petugas dapat mengelola laporan</li>
+              <li>Petugas dapat mengelola data pribadi</li>
             </ol>
             <li>Anggota</li>
             <ol type="a">
               <li>Anggota dapat login dan logout</li>
               <li>Anggota dapat melihat data buku</li>
               <li>Anggota dapat melihat data transaksi</li>
-              <li>Anggota dapat melihat riwayat transaksi</li>
               <li>Anggota dapat mengelola data pribadi</li>
             </ol>
             </ol><br>
@@ -280,46 +260,39 @@
         <br>
         <li><strong>Tahap Design</strong></li><br>
         <ol>
-            <li>Use Case Diagram</li> 
-            <p> Use Case Diagram merupakan daftar aksi atau tahapan yang mendefinisikan interaksi antara aktor dan sistem untuk mencapai suatu tujuan. Berikut adalah <i>Use case diagram</i> sistem informasi
+            <li>Data Flow Diagram</li> 
+            <p>Data Flow Diagram adalah jenis diagram diagram yang menunjukkan pergerakan informasi dari satu tempat ke tempat lain sebagai bagian dari prosesor tertentu pada umumnya.
+                Berikut adalah <i>Data Flow diagram</i> sistem informasi
             Perpustakaan Kelompok 1:</p>
-            <img src="sources/Use Case Diagram.png" style="width: 460px; height: 500px;">
-            <p>Gambar 5. Use Case Diagram</p><br>
-            <p>Pada gambar di atas terdapat tiga aktor yaitu:</p>
-            <ol>
-                <li>Anggota<br>Yaitu siswa/siswi yang telah terdaftar sebagai anggota perpustakaan. Anggota dapat melihat data buku yang tersedia di perpustakaan dan melihat transaksi peminjaman buku.</li>
-                <li>Operator<br>Yaitu bagian yang mempunyai akses penuh untuk mengelola data buku,  peminjaman dan pengembalian buku, dan data anggota.</li>
-                <li>Admin<br>Yaitu bagian yang hanya bisa melihat data buku dan anggota serta mengelola data operator.</li>
+            <ol type="a">
+                <li>DFD Level 0 (Diagram Konteks)</li>
+                <li>DFD Level 1</li>
+                <li>DFD Level 2 Proses 1 (petugas mengelola data buku)</li>
+                <li>DFD Level 2 Proses 2 (petugas mengelola data transaksi)</li>
+                <li>DFD Level 2 Proses 3 (petugas mengelola data anggota)</li>
+                <li>DFD Level 2 Proses 4 (petugas mengelola data petugas)</li>
+                <li>DFD Level 2 Proses 5 (anggota mengelola data pribadi)</li>
+                <li>DFD Level 2 Proses 6 (petugas mengelola data pribadi)</li>
             </ol>
             
-            <li>Activity Diagram</li>
-                <p>Activity Diagram merupakan rancangan aliran aktivitas atau aliran kerja dalam sebuah sistem yang akan dijalankan. 
-                    Activity Diagram juga digunakan untuk mendefinisikan atau mengelompokan aluran tampilan dari sistem tersebut.
-                    Dalam beberapa hal activity diagram memainkan peran mirip diagram alir, tetapi perbedaan
-                    prinsip antara notasi diagram alir adalah activity diagram mendukung <i>behavior paralel.</i> Activity Diagram yang 
-                    ada pada sistem informasi Perpustakaan Kelompok 1 adalah sebagai berikut:</p><br>
+            <li>Entity Relationship Diagram</li>
+                <p>ERD adalah model atau rancangan untuk membuat database, 
+                    supaya lebih mudah dalam menggambarkan data yang memiliki hubungan atau relasi dalam bentuk sebuah desain. 
+                    Dengan adanya ER diagram, maka sistem database yang terbentuk dapat digambarkan dengan lebih terstruktur dan terlihat rapi.</p><br>
                 <ol type="a">
-                    <li>Admin</li><br>
-                    <img src="sources/Activity Diagram-Admin.png" style="width: 410px; height: 480px;">
-                    <p>Gambar 6. Activity Diagram Admin - mengelola data pelamar</p><br>
-                    <p>Activity diagram yang ditampilkan pada gambar di atas adalah proses pendaftaran seorang operator yang dilakukan oleh admin.</p><br>
-                    <li>Operator</li><br>
-                    <img src="sources/Activity Diagram-Operator.png" style="width: 410px; height: 480px;">
-                    <p>Gambar 7. Activity Diagram Operator</p>
-                    <br><img src="sources/Activity Diagram-Operator (Pengembalian).png" style="width: 410px; height: 480px;">
-                    <p>Gambar 8. Activity Diagram Operator - Pengembalian</p><br>
-                    <li>Anggota</li><br>
-                    <img src="sources/Activity Diagram-Anggota.png" style="width: 410px; height: 480px;">
-                    <p>Gambar 9. Activity Diagram Anggota - Pendaftaran</p> 
-                    <br><img src="sources/Activity Diagram-Anggota (Peminjaman).png" style="width: 410px; height: 480px;">
-                    <p>Gambar 10. Activity Diagram Anggota - Peminjaman</p><br>
+                    <li>ERD Aplikasi Perpustakaan</li><br>
+                    <img src="Diagram/erd(1).png" style="width: 900px;">
+                    <p>Gambar 6. Entity Relationship Diagram</p><br>
                 </ol>
+            <li>Relasi Antar Tabel</li>
+                <p>Secara umum. relasi adalah hubungan antara tabel yang mempresentasikan hubungan antar objek di dunia nyata</p>
+                <img src="sources/relasitabel.png" alt="" style="width: 870px;">
                 <li>Struktur Tabel</li>
                 <p>Dalam pengembangan sistem ini memerlukan beberapa tabel yang
                     akan diolah untuk dijadikan suatu informasi yang dapat menghasilkan
                     keluaran yang diperlukan.</p>
                 <ol type="a">
-                    <li>Tabel User</li>
+                    <li>Tabel Anggota</li>
                     <table>
                         <tr>
                             <td>Fungsi tabel user</td>
@@ -384,7 +357,7 @@
                     </table><br>
                     <p>Tabel 1.3 Struktur Tabel Transaksi</p>
                    <img src="sources/tab_transaksi.png" alt="">
-                    <li>Tabel Operator</li>
+                    <li>Tabel Petugas</li>
                          <table border="0">
                         <tr>
                             <td>Fungsi tabel operator</td>
@@ -406,22 +379,14 @@
                     <img src="sources/tab_petugas.png" alt="">
                         
                     <br>
-                </ol>
-                <li>Relasi Antar Tabel</li>
-                <p>Secara umum. relasi adalah hubungan antara tabel yang mempresentasikan hubungan antar objek di dunia nyata</p>
-                <img src="sources/relasitabel.png" alt="" style="width: 870px;">
+            </ol>
             <li>Desain User Interface</li>
             <p>Desain User Interface (UI) adalah proses yang digunakan desainer untuk membuat tampilan dalam perangkat lunak atau perangkat terkomputerisasi, dengan fokus pada tampilan atau gaya.</p>
                 <ol type="a">
                     <li>UI Halaman Login</li>
-
                     <img src="sources/loogin(1).png">
                     <p>Gambar 11. Desain Interface pada halaman Login.</p>
-
-                    <li>UI Halaman Admin</li>
-                    <img src="sources/admin.png">
-                    <p>Gambar 12. Desain Interface pada halaman Admin.</p>
-                    <li>UI Halaman Operator</li>
+                    <li>UI Halaman Petugas</li>
                     <img src="sources/operator.png">
                     <p>Gambar 13. Desain Interface pada halaman Operator.</p>
                     <li>UI Halaman Anggota</li>
